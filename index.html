@@ -3,69 +3,7 @@
   <title>Website!</title>
 </head>
 <body>
-	<div id="playerW" data-bind="style:{ top:placement()=='top'?'0':'auto', 
-	bottom:placement()=='top'?'auto':'0',height:'25px'}" style="top: 0px; bottom: auto; height: 25px;"><div id="player">
-	<div class="item button" data-bind="
-		click:previous,
-		maskBtn:{css:'mainImage'}
-		" id="previous"></div> 
-	<div class="item button" data-bind="
-		click:play,
-		visible:!isPlay(),
-		maskBtn:{hasOffset:false}
-		" id="play" style="background-position: 0px top;"></div> 
-	<div class="item button" data-bind="
-		click:pause,
-		visible:isPlay(),
-		maskBtn:{css:'mainImage'}
-		" id="pause" style="background-position: -32px bottom; display: none;"></div> 
-	<div class="item button" data-bind="
-		click:next,
-		maskBtn:{css:'mainImage'}
-		" id="next"></div> 
-	<div class="text" id="title" data-bind="
-		followLeft:'#seeker',
-		">
-    <a data-bind="text:display,attr:{
-      href:current() ? current().url() : 'http://scmplayer.net'
-      }" target="_blank" id="titleLink" href="https://youtu.be/Bl1AXYOseuY">all around me</a>
-	</div> 
-	<div class="item ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-bind="
-		slider:playedFraction, 
-		sliderOptions:{step:0.00001,min:0,max:1,pauseable:true}
-		" id="seeker" style="left: 189px;"> 
-		<div id="seekerSliderBase" class="ui-slider-handle ui-state-default ui-corner-all" style="left: 2.522%;"></div> 
-		<div id="seekerBase"></div> 
-		<div id="seekerBuffered" data-bind="
-			style:{width:(loadedFraction()*100)+'%'}
-			" style="width: 100%;"></div> 
-	</div> 
-	<div class="text" id="tooltip"> 
-		<a href="http://scmplayer.net" id="scmLink" target="_blank">SCM Music Player</a> 
-	</div> 
-	<div class="text item" id="timer" data-bind="text:timer">00:05|03:21</div> 
-	<div class="item ui-slider-horizontal" data-bind="
-		innerBound:{bound:'.bound',handle:'.ui-slider-handle'}
-		" id="volume"> 
-		<div class="bound ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" data-bind="
-			slider:volume,
-			sliderOptions:{liveUpdate:true},
-			caption:'Volume: '+volume()+'%',
-			captionOptions:{target:'#tooltip a',trigger:'slide'}
-			" style="width: 59px; margin-left: 5.5px; margin-right: 5.5px;">
-		<div class="ui-slider-handle ui-state-default ui-corner-all" id="volumeSlider" style="margin-left: -5.5px; left: 100%;"></div> 
-		</div>
-	</div> 
-	<div class="item button" id="list" data-bind="maskBtn:{css:'mainImage',align:'right'},
-		click:togglePlaylist,
-		caption:'Toggle Playlist',
-		captionOptions:{target:'#tooltip a',trigger:'hover'}
-		"></div> 
-	<div class="mainImage" id="baseRight"></div> 
-	<div class="mainImage" id="baseLeft"></div> 
-</div>
-</div>
-    <body background="https://github.com/hunterdoss99/gethub/blob/gh-pages/giphy.gif?raw=true">
+<body background="https://github.com/hunterdoss99/gethub/blob/gh-pages/giphy.gif?raw=true">
 	    <h1> <center>Hello all </h1>
     
    <h2> <center>My name is Hunter Ellis</h2>
